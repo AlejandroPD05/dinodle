@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 *.env
 *.env.local
+
+# Control de calidad del estudio de sprites (imágenes temporales de revisión)
+scripts/sprite-studio/_qc/

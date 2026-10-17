@@ -1,122 +1,139 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import { ProtectedRoute } from './components/layout/ProtectedRoute';
+import { DinosaurAutocomplete } from './components/game/DinosaurAutocomplete';
+import { GuessBoard } from './components/game/GuessBoard';
+import { Countdown } from './components/game/Countdown';
+import { Home } from './pages/Home/Home';
+import { Login } from './pages/Login/Login';
+import { Register } from './pages/Register/Register';
+import { ForgotPassword } from './pages/ForgotPassword/ForgotPassword';
+import { ResetPassword } from './pages/ResetPassword/ResetPassword';
+import { DinoDex } from './pages/DinoDex/DinoDex';
+import { DinosaurPage } from './pages/Dinosaur/Dinosaur';
+import { Profile } from './pages/Profile/Profile';
+import { SpritesPage } from './pages/Sprites/SpritesPage';
+import { SpriteDetailPage } from './pages/Sprites/SpriteDetailPage';
+import { getTodayChallenge, submitGuess, getGameStatus, getGuessHistory } from './services/gameService';
+import { getAllDinosaurs } from './services/dinosaurService';
+import type { DailyChallenge } from './types/dailyChallenge';
+import type { Dinosaur } from './types/dinosaur';
+import type { GuessRow } from './services/gameService';
 
-function App() {
-  const [count, setCount] = useState(0)
+function Play() {
+  const [challenge, setChallenge] = useState<DailyChallenge | null>(null);
+  const [dinosaurs, setDinosaurs] = useState<Dinosaur[]>([]);
+  const [guesses, setGuesses] = useState<GuessRow[]>([]);
+  const [status, setStatus] = useState<'playing' | 'won'>('playing');
+  const [showResult, setShowResult] = useState(false);
+  const [targetName, setTargetName] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    getTodayChallenge()
+      .then((c) => {
+        setChallenge(c);
+        return Promise.all([getGuessHistory(c.id), getGameStatus(c.id)]);
+      })
+      .then(([history, gameStatus]) => {
+        setGuesses(history);
+        if (gameStatus) {
+          setStatus('won');
+          setShowResult(true);
+          if (gameStatus.targetDinosaur) {
+            setTargetName(gameStatus.targetDinosaur.name);
+          }
+        }
+      })
+      .catch((err: Error) => setError(err.message));
+
+    getAllDinosaurs().then(setDinosaurs).catch((err: Error) => setError(err.message));
+  }, []);
+
+  async function handleGuess(dino: Dinosaur) {
+    if (!challenge || submitting) {
+      return;
+    }
+    setSubmitting(true);
+    setError(null);
+    try {
+      const response = await submitGuess(challenge.id, dino.id);
+      setGuesses((prev) => [...prev, { dinosaur: dino, hints: response.hints }]);
+      if (response.status === 'won') {
+        setStatus('won');
+        if (response.targetDinosaur) {
+          setTargetName(response.targetDinosaur.name);
+        }
+        setTimeout(() => setShowResult(true), 800);
+      }
+    } catch (err) {
+      setError((err as Error).message);
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  if (error) {
+    return <p role="alert">{error}</p>;
+  }
+
+  if (!challenge) {
+    return <p>Cargando...</p>;
+  }
+
+  const excludeIds = new Set(guesses.map((g) => g.dinosaur.id));
 
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+    <div className="dk-panel">
+      {status === 'playing' && (
+        <div className="guess-bar">
+          <DinosaurAutocomplete
+            dinosaurs={dinosaurs}
+            excludeIds={excludeIds}
+            disabled={submitting}
+            onSelect={handleGuess}
+          />
         </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
+      )}
+
+      <p>Reto de hoy: {challenge.date} — Intentos: {guesses.length}</p>
+
+      <GuessBoard guesses={guesses} />
+
+      {status === 'won' && showResult && (
+        <>
+          <h2 className="victory-message">¡Lo has conseguido! Era el {targetName}</h2>
+          <p className="countdown-line">
+            Próximo dinosaurio en <Countdown />
           </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        </>
+      )}
+    </div>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <AuthProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/sprites" element={<SpritesPage />} />
+          <Route path="/sprites/:slug" element={<SpriteDetailPage />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path="/play" element={<Play />} />
+            <Route path="/dinodex" element={<DinoDex />} />
+            <Route path="/dinodex/:slug" element={<DinosaurPage />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </AuthProvider>
+  );
+}

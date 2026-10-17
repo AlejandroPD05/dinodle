@@ -1,0 +1,4049 @@
+{
+ "fetchedAt": "2026-10-17T20:58:55.038Z",
+ "dinos": [
+  {
+   "name": "Aardonyx",
+   "slug": "aardonyx",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Abelisaurus",
+   "slug": "abelisaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Abelisauridae)."
+  },
+  {
+   "name": "Achelousaurus",
+   "slug": "achelousaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Achillobator",
+   "slug": "achillobator",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Acrocanthosaurus",
+   "slug": "acrocanthosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Carcharodontosauridae)."
+  },
+  {
+   "name": "Aegyptosaurus",
+   "slug": "aegyptosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Afrovenator",
+   "slug": "afrovenator",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Megalosauridae)."
+  },
+  {
+   "name": "Agilisaurus",
+   "slug": "agilisaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Alamosaurus",
+   "slug": "alamosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 21,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Saltasauridae)."
+  },
+  {
+   "name": "Albertaceratops",
+   "slug": "albertaceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Albertosaurus",
+   "slug": "albertosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Tyrannosauridae)."
+  },
+  {
+   "name": "Alectrosaurus",
+   "slug": "alectrosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Alioramus",
+   "slug": "alioramus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Tyrannosauridae)."
+  },
+  {
+   "name": "Allosaurus",
+   "slug": "allosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 8.5,
+   "height_m": 2.7,
+   "weight_kg": 1700,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Depredador ágil y uno de los carnívoros dominantes de su época."
+  },
+  {
+   "name": "Alvarezsaurus",
+   "slug": "alvarezsaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Alvarezsauridae)."
+  },
+  {
+   "name": "Amargasaurus",
+   "slug": "amargasaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Dicraeosauridae)."
+  },
+  {
+   "name": "Ammosaurus",
+   "slug": "ammosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Anchisauridae)."
+  },
+  {
+   "name": "Ampelosaurus",
+   "slug": "ampelosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Amygdalodon",
+   "slug": "amygdalodon",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Anchiceratops",
+   "slug": "anchiceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Anchisaurus",
+   "slug": "anchisaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Ankylosaurus",
+   "slug": "ankylosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6.25,
+   "height_m": 1.7,
+   "weight_kg": 6000,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Herbívoro acorazado cubierto de placas óseas, con una maza en la punta de la cola."
+  },
+  {
+   "name": "Anserimimus",
+   "slug": "anserimimus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 3.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Ornithomimidae)."
+  },
+  {
+   "name": "Antarctosaurus",
+   "slug": "antarctosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 18,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica",
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Apatosaurus",
+   "slug": "apatosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 21,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Diplodocidae)."
+  },
+  {
+   "name": "Aragosaurus",
+   "slug": "aragosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 18,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Aralosaurus",
+   "slug": "aralosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Archaeoceratops",
+   "slug": "archaeoceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios."
+  },
+  {
+   "name": "Archaeornithomimus",
+   "slug": "archaeornithomimus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 3.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Ornithomimidae)."
+  },
+  {
+   "name": "Argentinosaurus",
+   "slug": "argentinosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 35,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Arrhinoceratops",
+   "slug": "arrhinoceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Aucasaurus",
+   "slug": "aucasaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Abelisauridae)."
+  },
+  {
+   "name": "Avaceratops",
+   "slug": "avaceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Avimimus",
+   "slug": "avimimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Bactrosaurus",
+   "slug": "bactrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Bagaceratops",
+   "slug": "bagaceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios."
+  },
+  {
+   "name": "Bambiraptor",
+   "slug": "bambiraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Barapasaurus",
+   "slug": "barapasaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 14,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Barosaurus",
+   "slug": "barosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 24,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Diplodocidae)."
+  },
+  {
+   "name": "Baryonyx",
+   "slug": "baryonyx",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Spinosauridae)."
+  },
+  {
+   "name": "Becklespinax",
+   "slug": "becklespinax",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Beipiaosaurus",
+   "slug": "beipiaosaurus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Bellusaurus",
+   "slug": "bellusaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Borogovia",
+   "slug": "borogovia",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Troodontidae)."
+  },
+  {
+   "name": "Brachiosaurus",
+   "slug": "brachiosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 21,
+   "height_m": 9,
+   "weight_kg": 35000,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Saurópodo de cuello muy largo capaz de alcanzar vegetación alta, entre los animales terrestres más altos que existieron."
+  },
+  {
+   "name": "Brachylophosaurus",
+   "slug": "brachylophosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Brachytrachelopan",
+   "slug": "brachytrachelopan",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Dicraeosauridae)."
+  },
+  {
+   "name": "Brontosaurus",
+   "slug": "brontosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 22,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Diplodocidae)."
+  },
+  {
+   "name": "Buitreraptor",
+   "slug": "buitreraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Camarasaurus",
+   "slug": "camarasaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 23,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Camptosaurus",
+   "slug": "camptosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Carcharodontosaurus",
+   "slug": "carcharodontosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Carcharodontosauridae)."
+  },
+  {
+   "name": "Carnotaurus",
+   "slug": "carnotaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": 1350,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Carnívoro de cabeza corta con un par de cuernos sobre los ojos y brazos muy reducidos."
+  },
+  {
+   "name": "Caudipteryx",
+   "slug": "caudipteryx",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Caudipterygidae)."
+  },
+  {
+   "name": "Cedarpelta",
+   "slug": "cedarpelta",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Centrosaurus",
+   "slug": "centrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Ceratosaurus",
+   "slug": "ceratosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica",
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Cetiosauriscus",
+   "slug": "cetiosauriscus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Cetiosaurus",
+   "slug": "cetiosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 18,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa",
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Chaoyangsaurus",
+   "slug": "chaoyangsaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Chaoyangsauridae)."
+  },
+  {
+   "name": "Chasmosaurus",
+   "slug": "chasmosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Chindesaurus",
+   "slug": "chindesaurus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Herrerasauridae)."
+  },
+  {
+   "name": "Chinshakiangosaurus",
+   "slug": "chinshakiangosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 11,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Chirostenotes",
+   "slug": "chirostenotes",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 1.7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Caenagnathidae)."
+  },
+  {
+   "name": "Chubutisaurus",
+   "slug": "chubutisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 23,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Chungkingosaurus",
+   "slug": "chungkingosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Citipati",
+   "slug": "citipati",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2.1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Coelophysis",
+   "slug": "coelophysis",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica",
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Coelurus",
+   "slug": "coelurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Coloradisaurus",
+   "slug": "coloradisaurus",
+   "diet": "Omnívoro",
+   "period": "Triásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los saurópodos (familia Massospondylidae)."
+  },
+  {
+   "name": "Compsognathus",
+   "slug": "compsognathus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 0.65,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Compsognathidae)."
+  },
+  {
+   "name": "Conchoraptor",
+   "slug": "conchoraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Corythosaurus",
+   "slug": "corythosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Cryolophosaurus",
+   "slug": "cryolophosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Antártida"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Dacentrurus",
+   "slug": "dacentrurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Stegosauridae)."
+  },
+  {
+   "name": "Daspletosaurus",
+   "slug": "daspletosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Tyrannosauridae)."
+  },
+  {
+   "name": "Datousaurus",
+   "slug": "datousaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Deinocheirus",
+   "slug": "deinocheirus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Deinonychus",
+   "slug": "deinonychus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Deltadromeus",
+   "slug": "deltadromeus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 8.1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Dicraeosaurus",
+   "slug": "dicraeosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 20,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Dicraeosauridae)."
+  },
+  {
+   "name": "Dilophosaurus",
+   "slug": "dilophosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica",
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Diplodocus",
+   "slug": "diplodocus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 25,
+   "height_m": null,
+   "weight_kg": 11000,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Saurópodo de cuerpo extremadamente largo y cola en forma de látigo."
+  },
+  {
+   "name": "Dromaeosaurus",
+   "slug": "dromaeosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Dryosaurus",
+   "slug": "dryosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Dryosauridae)."
+  },
+  {
+   "name": "Dryptosaurus",
+   "slug": "dryptosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Edmontonia",
+   "slug": "edmontonia",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Edmontosaurus",
+   "slug": "edmontosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 13,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Einiosaurus",
+   "slug": "einiosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Elaphrosaurus",
+   "slug": "elaphrosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Emausaurus",
+   "slug": "emausaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Eoraptor",
+   "slug": "eoraptor",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Eotyrannus",
+   "slug": "eotyrannus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Erketu",
+   "slug": "erketu",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Erlikosaurus",
+   "slug": "erlikosaurus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 3.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Euhelopus",
+   "slug": "euhelopus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Euoplocephalus",
+   "slug": "euoplocephalus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Europasaurus",
+   "slug": "europasaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 6.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Brachiosauridae)."
+  },
+  {
+   "name": "Eustreptospondylus",
+   "slug": "eustreptospondylus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Megalosauridae)."
+  },
+  {
+   "name": "Fukuiraptor",
+   "slug": "fukuiraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 4.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Neovenatoridae)."
+  },
+  {
+   "name": "Fukuisaurus",
+   "slug": "fukuisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4.7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Gallimimus",
+   "slug": "gallimimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes (familia Ornithomimidae)."
+  },
+  {
+   "name": "Gargoyleosaurus",
+   "slug": "gargoyleosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Garudimimus",
+   "slug": "garudimimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 4.7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Gasosaurus",
+   "slug": "gasosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Gasparinisaura",
+   "slug": "gasparinisaura",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 0.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Gastonia",
+   "slug": "gastonia",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Giganotosaurus",
+   "slug": "giganotosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 12.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Carcharodontosauridae)."
+  },
+  {
+   "name": "Gilmoreosaurus",
+   "slug": "gilmoreosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Giraffatitan",
+   "slug": "giraffatitan",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 23,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Brachiosauridae)."
+  },
+  {
+   "name": "Gobisaurus",
+   "slug": "gobisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Gorgosaurus",
+   "slug": "gorgosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 8.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Tyrannosauridae)."
+  },
+  {
+   "name": "Goyocephale",
+   "slug": "goyocephale",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Gryposaurus",
+   "slug": "gryposaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Guaibasaurus",
+   "slug": "guaibasaurus",
+   "diet": "Herbívoro",
+   "period": "Triásico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los terópodos pequeños (familia Guaibasauridae)."
+  },
+  {
+   "name": "Guanlong",
+   "slug": "guanlong",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Proceratosauridae)."
+  },
+  {
+   "name": "Hadrosaurus",
+   "slug": "hadrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Hagryphus",
+   "slug": "hagryphus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Caenagnathidae)."
+  },
+  {
+   "name": "Haplocanthosaurus",
+   "slug": "haplocanthosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 21.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Harpymimus",
+   "slug": "harpymimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Herrerasaurus",
+   "slug": "herrerasaurus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Herrerasauridae)."
+  },
+  {
+   "name": "Heterodontosaurus",
+   "slug": "heterodontosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África",
+    "Norteamérica",
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Heterodontosauridae)."
+  },
+  {
+   "name": "Heyuannia",
+   "slug": "heyuannia",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Homalocephale",
+   "slug": "homalocephale",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Huayangosaurus",
+   "slug": "huayangosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 4.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Hylaeosaurus",
+   "slug": "hylaeosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Hypacrosaurus",
+   "slug": "hypacrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Hypselosaurus",
+   "slug": "hypselosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Titanosauridae)."
+  },
+  {
+   "name": "Hypsilophodon",
+   "slug": "hypsilophodon",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hypsilophodontidae)."
+  },
+  {
+   "name": "Iguanodon",
+   "slug": "iguanodon",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": 3500,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Herbívoro de gran tamaño con un característico espolón en forma de pulgar en cada mano."
+  },
+  {
+   "name": "Indosuchus",
+   "slug": "indosuchus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Abelisauridae)."
+  },
+  {
+   "name": "Irritator",
+   "slug": "irritator",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Spinosauridae)."
+  },
+  {
+   "name": "Isisaurus",
+   "slug": "isisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 18,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Janenschia",
+   "slug": "janenschia",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 20,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Jaxartosaurus",
+   "slug": "jaxartosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Jingshanosaurus",
+   "slug": "jingshanosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Jobaria",
+   "slug": "jobaria",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 21,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Juravenator",
+   "slug": "juravenator",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 0.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Kentrosaurus",
+   "slug": "kentrosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Stegosauridae)."
+  },
+  {
+   "name": "Khaan",
+   "slug": "khaan",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Kotasaurus",
+   "slug": "kotasaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Kritosaurus",
+   "slug": "kritosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Lambeosaurus",
+   "slug": "lambeosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Leaellynasaura",
+   "slug": "leaellynasaura",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Oceanía"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Leptoceratops",
+   "slug": "leptoceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Leptoceratopsidae)."
+  },
+  {
+   "name": "Lesothosaurus",
+   "slug": "lesothosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Ligabuesaurus",
+   "slug": "ligabuesaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 24,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Liliensternus",
+   "slug": "liliensternus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Lophorhothon",
+   "slug": "lophorhothon",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Lophostropheus",
+   "slug": "lophostropheus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 6.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Lufengosaurus",
+   "slug": "lufengosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Massospondylidae)."
+  },
+  {
+   "name": "Lurdusaurus",
+   "slug": "lurdusaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Lycorhinus",
+   "slug": "lycorhinus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Heterodontosauridae)."
+  },
+  {
+   "name": "Magyarosaurus",
+   "slug": "magyarosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Maiasaura",
+   "slug": "maiasaura",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Majungasaurus",
+   "slug": "majungasaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Abelisauridae)."
+  },
+  {
+   "name": "Malawisaurus",
+   "slug": "malawisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Mamenchisaurus",
+   "slug": "mamenchisaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 22,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Mamenchisauridae)."
+  },
+  {
+   "name": "Mantellisaurus",
+   "slug": "mantellisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Iguanodontidae)."
+  },
+  {
+   "name": "Mapusaurus",
+   "slug": "mapusaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 13,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Carcharodontosauridae)."
+  },
+  {
+   "name": "Marshosaurus",
+   "slug": "marshosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Piatnitzkysauridae)."
+  },
+  {
+   "name": "Masiakasaurus",
+   "slug": "masiakasaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Noasauridae)."
+  },
+  {
+   "name": "Massospondylus",
+   "slug": "massospondylus",
+   "diet": "Omnívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los saurópodos (familia Massospondylidae)."
+  },
+  {
+   "name": "Maxakalisaurus",
+   "slug": "maxakalisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 13,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Megalosaurus",
+   "slug": "megalosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Megalosauridae)."
+  },
+  {
+   "name": "Melanorosaurus",
+   "slug": "melanorosaurus",
+   "diet": "Omnívoro",
+   "period": "Triásico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Metriacanthosaurus",
+   "slug": "metriacanthosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 8.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Metriacanthosauridae)."
+  },
+  {
+   "name": "Microceratus",
+   "slug": "microceratus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 0.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Protoceratopsidae)."
+  },
+  {
+   "name": "Micropachycephalosaurus",
+   "slug": "micropachycephalosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 0.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios."
+  },
+  {
+   "name": "Microraptor",
+   "slug": "microraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 0.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Minmi",
+   "slug": "minmi",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Oceanía"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Monolophosaurus",
+   "slug": "monolophosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 5.7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes."
+  },
+  {
+   "name": "Mononykus",
+   "slug": "mononykus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Mussaurus",
+   "slug": "mussaurus",
+   "diet": "Herbívoro",
+   "period": "Triásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Muttaburrasaurus",
+   "slug": "muttaburrasaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Oceanía"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Nanshiungosaurus",
+   "slug": "nanshiungosaurus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 4.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes (familia Therizinosauridae)."
+  },
+  {
+   "name": "Nemegtosaurus",
+   "slug": "nemegtosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 13,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Nemegtosauridae)."
+  },
+  {
+   "name": "Neovenator",
+   "slug": "neovenator",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 7.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Neovenatoridae)."
+  },
+  {
+   "name": "Nigersaurus",
+   "slug": "nigersaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Rebbachisauridae)."
+  },
+  {
+   "name": "Noasaurus",
+   "slug": "noasaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Noasauridae)."
+  },
+  {
+   "name": "Nodosaurus",
+   "slug": "nodosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Nomingia",
+   "slug": "nomingia",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 1.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Nothronychus",
+   "slug": "nothronychus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 5.3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes (familia Therizinosauridae)."
+  },
+  {
+   "name": "Nqwebasaurus",
+   "slug": "nqwebasaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Compsognathidae)."
+  },
+  {
+   "name": "Omeisaurus",
+   "slug": "omeisaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 20,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Opisthocoelicaudia",
+   "slug": "opisthocoelicaudia",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Saltasauridae)."
+  },
+  {
+   "name": "Ornitholestes",
+   "slug": "ornitholestes",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Compsognathidae)."
+  },
+  {
+   "name": "Ornithomimus",
+   "slug": "ornithomimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos grandes (familia Ornithomimidae)."
+  },
+  {
+   "name": "Orodromeus",
+   "slug": "orodromeus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Thescelosauridae)."
+  },
+  {
+   "name": "Oryctodromeus",
+   "slug": "oryctodromeus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Thescelosauridae)."
+  },
+  {
+   "name": "Ouranosaurus",
+   "slug": "ouranosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Oviraptor",
+   "slug": "oviraptor",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Oviraptoridae)."
+  },
+  {
+   "name": "Pachycephalosaurus",
+   "slug": "pachycephalosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Pachycephalosauridae)."
+  },
+  {
+   "name": "Pachyrhinosaurus",
+   "slug": "pachyrhinosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Panoplosaurus",
+   "slug": "panoplosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Pantydraco",
+   "slug": "pantydraco",
+   "diet": "Herbívoro",
+   "period": "Triásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Paralititan",
+   "slug": "paralititan",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 28,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Parasaurolophus",
+   "slug": "parasaurolophus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9.5,
+   "height_m": null,
+   "weight_kg": 2500,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Herbívoro con una cresta hueca en la cabeza que probablemente usaba para producir sonidos."
+  },
+  {
+   "name": "Parksosaurus",
+   "slug": "parksosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Thescelosauridae)."
+  },
+  {
+   "name": "Paronychodon",
+   "slug": "paronychodon",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Troodontidae)."
+  },
+  {
+   "name": "Patagosaurus",
+   "slug": "patagosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 18,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Pelorosaurus",
+   "slug": "pelorosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 25,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Pentaceratops",
+   "slug": "pentaceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Piatnitzkysaurus",
+   "slug": "piatnitzkysaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 4.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Piatnitzkysauridae)."
+  },
+  {
+   "name": "Pinacosaurus",
+   "slug": "pinacosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Plateosaurus",
+   "slug": "plateosaurus",
+   "diet": "Herbívoro",
+   "period": "Triásico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Plateosauridae)."
+  },
+  {
+   "name": "Poekilopleuron",
+   "slug": "poekilopleuron",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Megalosauridae)."
+  },
+  {
+   "name": "Polacanthus",
+   "slug": "polacanthus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Prenocephale",
+   "slug": "prenocephale",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Pachycephalosauridae)."
+  },
+  {
+   "name": "Probactrosaurus",
+   "slug": "probactrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Proceratosaurus",
+   "slug": "proceratosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 4.1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Proceratosauridae)."
+  },
+  {
+   "name": "Procompsognathus",
+   "slug": "procompsognathus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Prosaurolophus",
+   "slug": "prosaurolophus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Protarchaeopteryx",
+   "slug": "protarchaeopteryx",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños (familia Archaeopterygidae)."
+  },
+  {
+   "name": "Protoceratops",
+   "slug": "protoceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios."
+  },
+  {
+   "name": "Protohadros",
+   "slug": "protohadros",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Psittacosaurus",
+   "slug": "psittacosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Psittacosauridae)."
+  },
+  {
+   "name": "Quaesitosaurus",
+   "slug": "quaesitosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 23,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Nemegtosauridae)."
+  },
+  {
+   "name": "Rebbachisaurus",
+   "slug": "rebbachisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 20,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Rebbachisauridae)."
+  },
+  {
+   "name": "Rhabdodon",
+   "slug": "rhabdodon",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Rhabdodontidae)."
+  },
+  {
+   "name": "Rhoetosaurus",
+   "slug": "rhoetosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Oceanía"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Richardoestesia",
+   "slug": "richardoestesia",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Riojasaurus",
+   "slug": "riojasaurus",
+   "diet": "Herbívoro",
+   "period": "Triásico",
+   "length_m": 5.15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Riojasauridae)."
+  },
+  {
+   "name": "Rugops",
+   "slug": "rugops",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Abelisauridae)."
+  },
+  {
+   "name": "Saichania",
+   "slug": "saichania",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Saltasaurus",
+   "slug": "saltasaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Saltasauridae)."
+  },
+  {
+   "name": "Sarcosaurus",
+   "slug": "sarcosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Saurolophus",
+   "slug": "saurolophus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia",
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Sauropelta",
+   "slug": "sauropelta",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Saurophaganax",
+   "slug": "saurophaganax",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Allosauridae)."
+  },
+  {
+   "name": "Saurornithoides",
+   "slug": "saurornithoides",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia",
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Troodontidae)."
+  },
+  {
+   "name": "Saurornitholestes",
+   "slug": "saurornitholestes",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Scelidosaurus",
+   "slug": "scelidosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Scutellosaurus",
+   "slug": "scutellosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Secernosaurus",
+   "slug": "secernosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Segisaurus",
+   "slug": "segisaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Segnosaurus",
+   "slug": "segnosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Therizinosauridae)."
+  },
+  {
+   "name": "Shanag",
+   "slug": "shanag",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 0.45,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Shantungosaurus",
+   "slug": "shantungosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Shunosaurus",
+   "slug": "shunosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Shuvuuia",
+   "slug": "shuvuuia",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 0.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Silvisaurus",
+   "slug": "silvisaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Sinocalliopteryx",
+   "slug": "sinocalliopteryx",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2.37,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Compsognathidae)."
+  },
+  {
+   "name": "Sinornithosaurus",
+   "slug": "sinornithosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Sinosauropteryx",
+   "slug": "sinosauropteryx",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Sinovenator",
+   "slug": "sinovenator",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Troodontidae)."
+  },
+  {
+   "name": "Sinraptor",
+   "slug": "sinraptor",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 7.6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Neovenatoridae)."
+  },
+  {
+   "name": "Sonidosaurus",
+   "slug": "sonidosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Spinosaurus",
+   "slug": "spinosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 15,
+   "height_m": null,
+   "weight_kg": 7400,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "El terópodo más grande conocido, con una vela dorsal y adaptaciones para cazar en ríos y zonas acuáticas."
+  },
+  {
+   "name": "Staurikosaurus",
+   "slug": "staurikosaurus",
+   "diet": "Carnívoro",
+   "period": "Triásico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Herrerasauridae)."
+  },
+  {
+   "name": "Stegoceras",
+   "slug": "stegoceras",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Pachycephalosauridae)."
+  },
+  {
+   "name": "Stegosaurus",
+   "slug": "stegosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": 4,
+   "weight_kg": 3500,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Herbívoro cuadrúpedo con placas óseas a lo largo del lomo y púas en la cola para defenderse."
+  },
+  {
+   "name": "Stenopelix",
+   "slug": "stenopelix",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios."
+  },
+  {
+   "name": "Struthiomimus",
+   "slug": "struthiomimus",
+   "diet": "Omnívoro",
+   "period": "Cretácico",
+   "length_m": 4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los terópodos pequeños."
+  },
+  {
+   "name": "Struthiosaurus",
+   "slug": "struthiosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 2.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Nodosauridae)."
+  },
+  {
+   "name": "Styracosaurus",
+   "slug": "styracosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Suchomimus",
+   "slug": "suchomimus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 11,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Spinosauridae)."
+  },
+  {
+   "name": "Supersaurus",
+   "slug": "supersaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 35,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica",
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Diplodocidae)."
+  },
+  {
+   "name": "Talarurus",
+   "slug": "talarurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Tarbosaurus",
+   "slug": "tarbosaurus",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Tyrannosauridae)."
+  },
+  {
+   "name": "Tarchia",
+   "slug": "tarchia",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 8.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados (familia Ankylosauridae)."
+  },
+  {
+   "name": "Telmatosaurus",
+   "slug": "telmatosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Tenontosaurus",
+   "slug": "tenontosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Thecodontosaurus",
+   "slug": "thecodontosaurus",
+   "diet": "Omnívoro",
+   "period": "Triásico",
+   "length_m": 2.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa",
+    "África"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Therizinosaurus",
+   "slug": "therizinosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los terópodos grandes (familia Therizinosauridae)."
+  },
+  {
+   "name": "Thescelosaurus",
+   "slug": "thescelosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Thescelosauridae)."
+  },
+  {
+   "name": "Torosaurus",
+   "slug": "torosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 7.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Ceratopsidae)."
+  },
+  {
+   "name": "Torvosaurus",
+   "slug": "torvosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica",
+    "Europa"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Megalosauridae)."
+  },
+  {
+   "name": "Triceratops",
+   "slug": "triceratops",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 9,
+   "height_m": 3,
+   "weight_kg": 9000,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Herbívoro reconocible por sus tres cuernos y el gran escudo óseo sobre el cuello."
+  },
+  {
+   "name": "Troodon",
+   "slug": "troodon",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Troodontidae)."
+  },
+  {
+   "name": "Tsintaosaurus",
+   "slug": "tsintaosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 12,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Hadrosauridae)."
+  },
+  {
+   "name": "Tuojiangosaurus",
+   "slug": "tuojiangosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los dinosaurios acorazados."
+  },
+  {
+   "name": "Tylocephale",
+   "slug": "tylocephale",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Pachycephalosauridae)."
+  },
+  {
+   "name": "Tyrannosaurus Rex",
+   "slug": "tyrannosaurus-rex",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 12.3,
+   "height_m": 4,
+   "weight_kg": 8000,
+   "rarity": "común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Uno de los carnívoros terrestres más grandes conocidos, con una mordida extremadamente poderosa."
+  },
+  {
+   "name": "Unenlagia",
+   "slug": "unenlagia",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2.4,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Sudamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Urbacodon",
+   "slug": "urbacodon",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 1,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos pequeños (familia Troodontidae)."
+  },
+  {
+   "name": "Utahraptor",
+   "slug": "utahraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 6,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Dromaeosauridae)."
+  },
+  {
+   "name": "Valdosaurus",
+   "slug": "valdosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Dryosauridae)."
+  },
+  {
+   "name": "Velociraptor",
+   "slug": "velociraptor",
+   "diet": "Carnívoro",
+   "period": "Cretácico",
+   "length_m": 2,
+   "height_m": 0.5,
+   "weight_kg": 15,
+   "rarity": "común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Pequeño depredador ágil, mucho más parecido a un ave con plumas que a la imagen popular de cine."
+  },
+  {
+   "name": "Vulcanodon",
+   "slug": "vulcanodon",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 6.5,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "África"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Yandusaurus",
+   "slug": "yandusaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos."
+  },
+  {
+   "name": "Yangchuanosaurus",
+   "slug": "yangchuanosaurus",
+   "diet": "Carnívoro",
+   "period": "Jurásico",
+   "length_m": 10,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio carnívoro del grupo de los terópodos grandes (familia Metriacanthosauridae)."
+  },
+  {
+   "name": "Yimenosaurus",
+   "slug": "yimenosaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 9,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Yinlong",
+   "slug": "yinlong",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 1.2,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ceratopsios (familia Chaoyangsauridae)."
+  },
+  {
+   "name": "Yuanmousaurus",
+   "slug": "yuanmousaurus",
+   "diet": "Herbívoro",
+   "period": "Jurásico",
+   "length_m": 17,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "raro",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los saurópodos (familia Mamenchisauridae)."
+  },
+  {
+   "name": "Yunnanosaurus",
+   "slug": "yunnanosaurus",
+   "diet": "Omnívoro",
+   "period": "Jurásico",
+   "length_m": 7,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Asia"
+   ],
+   "description": "Dinosaurio omnívoro del grupo de los saurópodos."
+  },
+  {
+   "name": "Zalmoxes",
+   "slug": "zalmoxes",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 3,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "común",
+   "location": [
+    "Europa"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Rhabdodontidae)."
+  },
+  {
+   "name": "Zephyrosaurus",
+   "slug": "zephyrosaurus",
+   "diet": "Herbívoro",
+   "period": "Cretácico",
+   "length_m": 1.8,
+   "height_m": null,
+   "weight_kg": null,
+   "rarity": "poco común",
+   "location": [
+    "Norteamérica"
+   ],
+   "description": "Dinosaurio herbívoro del grupo de los ornitópodos (familia Thescelosauridae)."
+  }
+ ]
+}

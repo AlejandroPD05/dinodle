@@ -1,75 +1,160 @@
-# React + TypeScript + Vite
+# Dinodle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un dinosaurio secreto cada día. Escribe nombres, lee las pistas y descúbrelo antes de que se acabe el día. Cada acierto entra en tu DinoDex.
 
-Currently, two official plugins are available:
+Proyecto personal de portfolio, hecho con React, TypeScript y Supabase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Capturas
 
-## React Compiler
+![Inicio](docs/home.png)
+![Partida](docs/play.png)
+![DinoDex](docs/dinodex.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Cómo se juega
 
-## Expanding the ESLint configuration
+- Cada día hay un dinosaurio secreto. Cambia a las 00:00 UTC.
+- Escribes el nombre de un dinosaurio y lo eliges de la lista. Los intentos son ilimitados, pero no se puede repetir.
+- Cada intento enseña cinco casillas: dinosaurio, periodo, dieta, ubicación y longitud. Verde si coincide, ámbar si te acercas y rojo si fallas. Las flechas indican si el secreto es más largo o más corto.
+- Al descubrirlo, el dinosaurio entra en tu DinoDex y sube tu racha.
+- El perfil muestra tus estadísticas y un calendario de actividad.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React, TypeScript y Vite, con React Router.
+- Supabase: PostgreSQL, Auth, Row Level Security y Edge Functions (Deno).
+- CSS propio, sin frameworks. Fuentes Bungee, Press Start 2P y Space Grotesk.
+- Vitest y Testing Library para los tests.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Decisiones de diseño
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+**El dinosaurio del día nunca llega al navegador.** Las pistas se calculan en la Edge Function `submit-guess`, que consulta el dinosaurio secreto con permisos de servidor. El cliente solo recibe las pistas, y el nombre únicamente cuando ya has ganado.
 
+**El cliente no puede escribir resultados.** Las tablas `games`, `guesses`, `streaks` y `user_dinosaurs` solo tienen política de lectura. Todo lo que cuenta (intentos, victorias, rachas, colección) lo escribe la Edge Function con la service role key.
+
+**El reto diario se crea de forma perezosa.** `get-daily-challenge` crea el reto de hoy en la primera visita del día. La restricción `unique(date)` evita duplicados si dos personas entran a la vez, y excluye los dinosaurios de los últimos 30 días.
+
+**El día es UTC**, tanto para el reto como para las rachas y el temporizador. En España el cambio ocurre a la 01:00 o las 02:00.
+
+**El contador de intentos es atómico.** La función SQL `register_guess_attempt` hace un `UPDATE ... RETURNING`, así que dos peticiones simultáneas nunca obtienen el mismo número de intento. Solo acepta partidas del día actual y solo la puede ejecutar la service role.
+
+**Las estadísticas se calculan, no se duplican.** La vista `user_stats` agrega desde `games` con `security_invoker`, de modo que cada usuario solo ve las suyas.
+
+**Accesibilidad.** El buscador es un combobox con ARIA y navegación por teclado. Los resultados se distinguen por símbolo además de por color. Las animaciones respetan `prefers-reduced-motion`.
+
+**Latencia.** Las funciones se invocan fijando la región de la base de datos (`FunctionRegion` en `src/services/gameService.ts`), para que función y base de datos estén en el mismo sitio.
+
+## Datos
+
+El catálogo tiene 288 dinosaurios: 12 curados a mano y 276 procedentes de un dataset público derivado de la Paleobiology Database (paleobiodb.org).
+
+- Solo entran géneros con longitud, dieta, periodo y ubicación, porque son los datos que necesitan las pistas.
+- Periodo: el más frecuente entre los registros fósiles del género, según el punto medio de su edad.
+- Ubicación: los continentes que concentran al menos el 15% de los registros del género.
+- Rareza: cuantos menos registros fósiles tiene un género, más raro es.
+- Las descripciones de esos 276 se generan solo con campos del dataset (grupo y familia). Altura y peso no existen en el dataset y quedan vacíos.
+
+## Sprites
+
+Cada dinosaurio tiene un sprite de pixel art animado, dibujado de forma procedural por el estudio `scripts/sprite-studio/`. El estudio es determinista: el mismo slug produce siempre exactamente los mismos píxeles, así que las hojas se pueden regenerar en cualquier momento.
+
+- **Galería pública** en `/sprites`, con ficha animada por dinosaurio en `/sprites/:slug`: visor con zoom, velocidad y fondos, descargas de hoja PNG y GIFs por animación.
+- **Seis animaciones** por dinosaurio: idle, walk, attack, hurt, sleep y faint, en celdas de 64×64.
+- **Salida**: `public/dinos/sprites/` (hojas `pixelart/<slug>.png`, GIFs `gifs/<slug>-<anim>.gif` y `manifest.json`) más el manifiesto tipado `src/data/sprites.ts`.
+- **En el juego**: `DinoSprite` muestra el idle animado donde antes había emojis; si un dinosaurio no tuviera sprite, cae al emoji como respaldo.
+
+```bash
+npm run sprites          # genera los 288 dinosaurios (hojas, gifs y manifiesto)
+npm run sprites:check    # verifica dimensiones, márgenes, gifs y determinismo
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Para iterar sobre uno solo: `npm run sprites -- --solo <slug>` (con `--qc` para la hoja de revisión y `--vista` para la vista HTML). Los contactos de calidad quedan en `scripts/sprite-studio/_qc/`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+La estética está inspirada en [PMD Collab](https://sprites.pmdcollab.org/): sprites cuadrados mirando a la derecha, contorno oscuro de un píxel y animaciones cortas y legibles. Todo el arte de este proyecto es original y procede del propio estudio.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estructura
 
 ```
+src/
+  components/    game, layout, profile, sprites
+  context/       sesión (AuthContext)
+  data/          manifiesto de sprites generado
+  lib/           cliente de Supabase
+  pages/         Home, Login, Register, ForgotPassword, DinoDex, Dinosaur, Profile, Sprites
+  services/      acceso a Supabase (los componentes no lo llaman directamente)
+  types/
+  utils/
+scripts/
+  generar-sprites.mjs  primera versión estática del set de sprites (obsoleta)
+  sprite-studio/       estudio actual: cuerpos, animaciones, GIFs y verificación
+supabase/
+  schema.sql     tablas, políticas RLS, funciones y vista
+  seed.sql       catálogo de dinosaurios
+  functions/
+    _shared/     lógica de pistas (con tests)
+    get-daily-challenge/
+    submit-guess/
+public/          iconos y sprites generados (dinos/sprites/)
+```
+
+## Puesta en marcha
+
+Necesitas Node.js (se desarrolló con Node 24) y una cuenta de Supabase.
+
+1. Clona el repositorio e instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+2. Crea un proyecto en Supabase. Copia la Project URL (Settings, Data API) y la clave pública (Settings, API Keys).
+
+3. Copia `.env.example` a `.env.local` y rellena:
+
+   ```
+   VITE_SUPABASE_URL=
+   VITE_SUPABASE_ANON_KEY=
+   ```
+
+4. En el SQL Editor de Supabase ejecuta `supabase/schema.sql` y después `supabase/seed.sql`.
+
+5. Despliega las Edge Functions:
+
+   ```bash
+   npx supabase login
+   npx supabase link --project-ref TU_PROJECT_REF
+   npx supabase functions deploy get-daily-challenge
+   npx supabase functions deploy submit-guess
+   ```
+
+   No las despliegues con `--no-verify-jwt`: `submit-guess` lee el id del usuario del token que Supabase ya ha verificado.
+
+   Si tu proyecto no está en `eu-west-1`, cambia `FunctionRegion.EuWest1` en `src/services/gameService.ts` por la región de tu base de datos.
+
+6. En Authentication, URL Configuration, añade `http://localhost:5173` como Site URL.
+
+7. Arranca la aplicación:
+
+   ```bash
+   npm run dev
+   ```
+
+## Tests
+
+```bash
+npm run test
+```
+
+Cubren la lógica de pistas, las fechas del calendario, el temporizador, el encoder GIF, la galería de sprites y los componentes principales (buscador, DinoDex, Home y Dinosaur).
+
+## Limitaciones conocidas
+
+- La tabla `dinosaurs` es de lectura pública, porque el buscador necesita todos los nombres. El DinoDex bloquea en la interfaz, no en la base de datos.
+- Los sprites son procedurales: el estudio los genera a partir del catálogo y `DinoSprite` cae al emoji si faltara alguno. Los campos `image_url` y `sprite_url` siguen reservados para material dibujado a mano.
+- Si cambia el día a mitad de una partida, hay que recargar la página.
+
+## Siguientes pasos
+
+- Retoques manuales de sprites: el estudio permite sobrescribir el cuerpo de un dinosaurio concreto sin tocar el resto.
+- Filtros por periodo y dieta en el DinoDex.
+- Panel de administración para gestionar el catálogo.
+- Inicio de sesión con Google y GitHub.

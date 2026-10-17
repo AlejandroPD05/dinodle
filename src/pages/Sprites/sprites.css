@@ -1,0 +1,496 @@
+/* Galería pública de sprites (/sprites y /sprites/:slug).
+   Prefijo: sprites-. Reutiliza las variables de :root (src/index.css). */
+
+.sprites-page {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* --- Cabecera propia de la galería (la zona pública no usa el Header privado) --- */
+
+.sprites-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 14px;
+}
+
+.sprites-wordmark {
+  font-family: var(--font-display);
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-amber-bright);
+  text-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.sprites-wordmark:hover {
+  color: var(--color-amber-bright);
+  text-decoration: none;
+}
+
+.sprites-header-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.sprites-nav-link {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-bone);
+}
+
+.sprites-nav-link:hover {
+  color: var(--color-amber-bright);
+  text-decoration: none;
+}
+
+.sprites-eyebrow {
+  margin: 0 0 6px;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-ink-muted);
+}
+
+.sprites-title {
+  margin: 0 0 6px;
+  font-size: 34px;
+}
+
+.sprites-counter {
+  margin: 0;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-bone);
+}
+
+/* --- Buscador y filtros --- */
+
+.sprites-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sprites-search {
+  flex: 1 1 240px;
+  max-width: 340px;
+}
+
+.sprites-search label {
+  margin-top: 0;
+}
+
+.sprites-search input {
+  width: 100%;
+}
+
+.sprites-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sprites-results {
+  margin: 0;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-ink-muted);
+}
+
+.sprites-error {
+  background: rgba(156, 69, 48, 0.15);
+  border: 2px solid var(--color-rust);
+  border-radius: 4px;
+  padding: 12px;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+}
+
+.sprites-error p {
+  margin: 0 0 10px;
+}
+
+/* --- Rejilla de tarjetas --- */
+
+.sprites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+.sprites-grid li {
+  padding: 0;
+}
+
+.sprites-card {
+  display: block;
+  height: 100%;
+  background: linear-gradient(180deg, var(--color-panel), var(--color-bg-alt));
+  border: 2px solid var(--color-panel-border);
+  border-radius: 6px;
+  box-shadow: 0 3px 0 var(--color-ink);
+  padding: 10px;
+  color: var(--color-bone);
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 190px;
+}
+
+.sprites-card:hover {
+  color: var(--color-bone);
+  text-decoration: none;
+  transform: translateY(-4px);
+  border-color: var(--sprites-card-accent, var(--color-amber));
+  box-shadow: 0 7px 0 var(--color-ink), 0 12px 18px rgba(0, 0, 0, 0.4);
+}
+
+.sprites-card-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--color-ink);
+  border: 1px solid rgba(224, 171, 92, 0.28);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Preview idle: 4 frames de la fila 0 (0% → 3/7 = 42.857%).
+   jump-none mantiene 0 y 42.857 como valores: las 4 posiciones caen en celdas enteras. */
+.sprites-card-sprite {
+  display: block;
+  width: 84%;
+  aspect-ratio: 1 / 1;
+  background-repeat: no-repeat;
+  background-size: 800% auto;
+  background-position: 0% 0%;
+  image-rendering: pixelated;
+  animation: sprites-idle var(--sprites-idle-duration, 0.7s) steps(4, jump-none) infinite;
+}
+
+@keyframes sprites-idle {
+  from {
+    background-position-x: 0%;
+  }
+  to {
+    background-position-x: 42.857%;
+  }
+}
+
+.sprites-card-name {
+  display: block;
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.sprites-card-meta {
+  display: block;
+  margin-top: 4px;
+  font-size: 12.5px;
+  color: var(--color-ink-muted);
+}
+
+/* --- Sección de créditos (texto literal, ref. 06) --- */
+
+.sprites-credits {
+  margin-bottom: 0;
+}
+
+.sprites-credits-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.sprites-credits p {
+  margin: 0 0 8px;
+}
+
+.sprites-credits-note {
+  font-size: 13px;
+  color: var(--color-ink-muted);
+}
+
+/* --- Página de detalle --- */
+
+.sprites-detail-titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.sprites-detail-titlebar .sprites-title {
+  margin-bottom: 0;
+}
+
+.sprites-detail-siblings {
+  display: flex;
+  gap: 12px;
+}
+
+.sprites-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 290px);
+  gap: 18px;
+  align-items: start;
+}
+
+/* --- Visor --- */
+
+.sprites-viewer {
+  display: block;
+}
+
+.sprites-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.sprites-tab {
+  padding: 8px 9px;
+  font-size: 9.5px;
+  background: var(--color-bg-alt);
+  color: var(--color-bone);
+  border-color: var(--color-panel-border);
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+.sprites-tab[aria-selected="true"] {
+  background: linear-gradient(180deg, var(--color-amber-bright), var(--color-amber));
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+
+.sprites-tabpanel {
+  display: block;
+}
+
+.sprites-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  padding: 18px;
+  border: 2px solid var(--color-panel-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.sprites-fondo-oscuro {
+  background: var(--color-ink);
+}
+
+.sprites-fondo-claro {
+  background: #d9cfb3;
+}
+
+.sprites-fondo-cuadros {
+  background-color: #20221a;
+  background-image: repeating-conic-gradient(#2c2e22 0% 25%, #191b13 0% 50%);
+  background-position: 0 0;
+  background-size: 16px 16px;
+}
+
+.sprites-canvas {
+  display: block;
+  image-rendering: pixelated;
+}
+
+.sprites-viewer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 14px;
+}
+
+.sprites-control-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sprites-control-label {
+  margin-right: 2px;
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-ink-muted);
+}
+
+.sprites-control-button {
+  padding: 7px 10px;
+  font-size: 9.5px;
+  background: var(--color-bg-alt);
+  color: var(--color-bone);
+  border-color: var(--color-panel-border);
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+.sprites-control-button[aria-pressed="true"] {
+  background: linear-gradient(180deg, var(--color-amber-bright), var(--color-amber));
+  color: var(--color-ink);
+  border-color: var(--color-ink);
+}
+
+.sprites-play-button {
+  min-width: 108px;
+}
+
+.sprites-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.sprites-downloads .button-link {
+  padding: 10px 14px;
+  font-size: 10px;
+}
+
+.sprites-downloads button {
+  padding: 10px 14px;
+  font-size: 10px;
+}
+
+.sprites-detail-credit {
+  margin: 12px 0 0;
+  font-size: 12.5px;
+  color: var(--color-ink-muted);
+}
+
+/* --- Ficha lateral --- */
+
+.sprites-ficha {
+  margin-bottom: 0;
+}
+
+.sprites-ficha-title {
+  margin: 0 0 2px;
+  font-size: 20px;
+}
+
+.sprites-ficha-scientific {
+  margin: 0 0 10px;
+  font-style: italic;
+  color: var(--color-ink-muted);
+}
+
+.sprites-ficha-list {
+  margin: 0;
+}
+
+.sprites-ficha-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--color-panel-border);
+}
+
+.sprites-ficha-row dt {
+  font-family: var(--font-pixel);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-ink-muted);
+}
+
+.sprites-ficha-row dd {
+  margin: 0;
+  text-align: right;
+}
+
+.sprites-ficha-description {
+  margin: 12px 0 0;
+  font-size: 15px;
+}
+
+.sprites-ficha-status {
+  margin: 10px 0 0;
+  color: var(--color-ink-muted);
+  font-size: 14px;
+}
+
+.sprites-ficha-link {
+  margin-top: 14px;
+  font-size: 10px;
+}
+
+/* --- Estados --- */
+
+.sprites-notfound {
+  text-align: center;
+  padding: 32px 18px;
+}
+
+.sprites-notfound-title {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.sprites-notfound p {
+  margin: 0 0 18px;
+  color: var(--color-ink-muted);
+}
+
+/* --- Accesibilidad y adaptación --- */
+
+@media (prefers-reduced-motion: reduce) {
+  .sprites-card-sprite {
+    animation: none;
+  }
+
+  .sprites-card,
+  .sprites-tab,
+  .sprites-control-button {
+    transition: none;
+  }
+
+  .sprites-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .sprites-detail-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .sprites-title {
+    font-size: 26px;
+  }
+
+  .sprites-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+}
