@@ -138,6 +138,17 @@ Necesitas Node.js (se desarrolló con Node 24) y una cuenta de Supabase.
    npm run dev
    ```
 
+## Despliegue
+
+La aplicación se publica como sitio estático (el cliente habla directamente con Supabase), así que vale cualquier hosting con soporte para SPA. En el repositorio va incluida la configuración de Vercel (`vercel.json`).
+
+1. Importa el repositorio en Vercel: el framework (Vite) se detecta solo y no hay que tocar los comandos de build.
+2. Añade las variables de entorno `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY` con los mismos valores de tu `.env.local`.
+3. Despliega. El *rewrite* de `vercel.json` manda las rutas del cliente (`/sprites/...`, `/dinodex`, etc.) a `index.html` para que los enlaces profundos funcionen, y los sprites van incluidos en el repositorio, así que no hay que regenerarlos en el build.
+4. En Supabase, Authentication → URL Configuration, pon la URL del despliegue como Site URL y añade `https://tu-dominio/reset-password` a las Redirect URLs, para que los correos de confirmación y recuperación vuelvan a la web.
+
+En otro hosting, replica el *rewrite* a `index.html` y sirve `dist/` como estático.
+
 ## Tests
 
 ```bash
