@@ -34,11 +34,11 @@ export function Register() {
       <form onSubmit={handleSubmit}>
         <h1>Crear cuenta</h1>
         <label htmlFor="username">Nombre de usuario</label>
-        <input id="username" type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
+        <input id="username" type="text" value={username} onChange={(e) => setUsername(e.target.value)} required autoComplete="username" maxLength={30} />
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" maxLength={254} />
         <label htmlFor="password">Contraseña</label>
-        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} />
+        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} maxLength={128} autoComplete="new-password" />
         {error && <p role="alert">{error}</p>}
         <button type="submit">Crear cuenta</button>
         <p>¿Ya tienes cuenta? <Link to="/login">Inicia sesión</Link></p>

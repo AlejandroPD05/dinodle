@@ -94,6 +94,7 @@ export function DinoDex() {
           <input
             id="dinodex-search-input"
             type="search"
+            maxLength={60}
             value={query}
             disabled={filter === 'locked'}
             placeholder="Solo entre los descubiertos..."

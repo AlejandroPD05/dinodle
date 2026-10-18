@@ -25,9 +25,9 @@ export function Login() {
       <form onSubmit={handleSubmit}>
         <h1>Iniciar sesión</h1>
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" maxLength={254} />
         <label htmlFor="password">Contraseña</label>
-        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <input id="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required autoComplete="current-password" maxLength={128} />
         {error && <p role="alert">{error}</p>}
         <button type="submit">Entrar</button>
         <p>¿No tienes cuenta? <Link to="/register">Regístrate</Link></p>

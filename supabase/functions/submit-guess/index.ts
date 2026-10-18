@@ -67,10 +67,30 @@ Deno.serve(async (req) => {
     });
   }
 
-  const { daily_challenge_id, dinosaur_id } = await req.json();
+  const body = (await req.json().catch(() => null)) as {
+    daily_challenge_id?: unknown;
+    dinosaur_id?: unknown;
+  } | null;
+
+  const daily_challenge_id = body?.daily_challenge_id;
+  const dinosaur_id = body?.dinosaur_id;
 
   if (!daily_challenge_id || !dinosaur_id) {
     return new Response(JSON.stringify({ error: "Faltan datos" }), {
+      status: 400,
+      headers: { ...corsHeaders, "Content-Type": "application/json" },
+    });
+  }
+
+  const uuidRe = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+  if (
+    typeof daily_challenge_id !== "string" ||
+    typeof dinosaur_id !== "string" ||
+    !uuidRe.test(daily_challenge_id) ||
+    !uuidRe.test(dinosaur_id)
+  ) {
+    return new Response(JSON.stringify({ error: "Datos no válidos" }), {
       status: 400,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
@@ -143,6 +163,23 @@ Deno.serve(async (req) => {
         targetDinosaur: target,
       }),
       { headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    );
+  }
+
+  // Frena la fuerza bruta: como maximo 30 conjeturas por minuto y partida.
+  const { count: recentGuesses } = await supabase
+    .from("guesses")
+    .select("id", { count: "exact", head: true })
+    .eq("game_id", game.id)
+    .gt("created_at", new Date(Date.now() - 60_000).toISOString());
+
+  if ((recentGuesses ?? 0) >= 30) {
+    return new Response(
+      JSON.stringify({ error: "Demasiados intentos seguidos. Espera un momento y vuelve a intentarlo." }),
+      {
+        status: 429,
+        headers: { ...corsHeaders, "Content-Type": "application/json", "Retry-After": "20" },
+      }
     );
   }
 

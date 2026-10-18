@@ -68,6 +68,7 @@ export function DinosaurAutocomplete({
         id="dino-guess-input"
         ref={inputRef}
         type="text"
+        maxLength={60}
         value={value}
         disabled={disabled}
         placeholder="Escribe el nombre de un dinosaurio..."

@@ -424,3 +424,9 @@ entrypoint = "./functions/get-daily-challenge/index.ts"
 # Specifies static files to be bundled with the function. Supports glob patterns.
 # For example, if you want to serve static HTML pages in your function:
 # static_files = [ "./functions/get-daily-challenge/*.html" ]
+
+[functions.submit-guess]
+enabled = true
+# La plataforma comprueba la firma del JWT antes de invocar la funcion.
+verify_jwt = true
+entrypoint = "./functions/submit-guess/index.ts"

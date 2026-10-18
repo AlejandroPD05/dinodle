@@ -31,7 +31,7 @@ export function ForgotPassword() {
       <form onSubmit={handleSubmit}>
         <h1>Recuperar contraseña</h1>
         <label htmlFor="email">Email</label>
-        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+        <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" maxLength={254} />
         {error && <p role="alert">{error}</p>}
         <button type="submit">Enviar enlace</button>
       </form>

@@ -149,6 +149,17 @@ La aplicación se publica como sitio estático (el cliente habla directamente co
 
 En otro hosting, replica el *rewrite* a `index.html` y sirve `dist/` como estático.
 
+## Seguridad
+
+La auditoría de seguridad de octubre de 2026 revisó secretos, accesos, dependencias, formularios y cabeceras. Lo que aplica a este proyecto:
+
+- **Contraseñas**: las gestiona Supabase Auth (bcrypt con sal, verificación por email y sus propios límites de intentos). La aplicación nunca almacena contraseñas y este repositorio no contiene ninguna.
+- **Base de datos**: RLS activo en todas las tablas. El navegador solo puede leer (cada usuario lo suyo): ninguna tabla acepta escrituras del cliente, y las funciones `security definer` van con `search_path` vacío. Los permisos están endurecidos: `anon` y `authenticated` solo tienen `select` (más el `update` del perfil propio).
+- **Edge Functions**: `submit-guess` exige un JWT válido (lo verifica la plataforma), valida que las entradas sean UUID y limita la fuerza bruta a 30 conjeturas por minuto y partida. `get-daily-challenge` es pública a propósito y no revela el dinosaurio objetivo.
+- **Claves**: al cliente solo va la clave pública (`VITE_SUPABASE_ANON_KEY`, protegida por RLS); la service role key vive únicamente en las Edge Functions (entorno de Supabase). `.env.local` está ignorado por git: no hay secretos en el repositorio ni en su historial.
+- **Cabeceras**: `vercel.json` añade CSP, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` y `Permissions-Policy` al despliegue (verificadas contra el build real).
+- **Formularios**: validación de longitud en todos los campos (email ≤ 254, usuario ≤ 30, contraseña 6–128) y ningún HTML crudo en las vistas (React escapa por defecto; no se usa `dangerouslySetInnerHTML`).
+
 ## Tests
 
 ```bash

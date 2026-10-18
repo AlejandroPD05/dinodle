@@ -71,6 +71,8 @@ export function ResetPassword() {
           onChange={(e) => setPassword(e.target.value)}
           required
           minLength={6}
+          maxLength={128}
+          autoComplete="new-password"
         />
         <label htmlFor="repeat">Repite la contraseña</label>
         <input
@@ -80,6 +82,8 @@ export function ResetPassword() {
           onChange={(e) => setRepeat(e.target.value)}
           required
           minLength={6}
+          maxLength={128}
+          autoComplete="new-password"
         />
         {error && <p role="alert">{error}</p>}
         <button type="submit" disabled={saving}>

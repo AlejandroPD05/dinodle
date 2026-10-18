@@ -124,6 +124,7 @@ export function SpritesPage() {
           <input
             id="sprites-search-input"
             type="search"
+            maxLength={60}
             value={query}
             placeholder="Buscar por nombre…"
             onChange={(e) => setQuery(e.target.value)}
