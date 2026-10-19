@@ -162,6 +162,9 @@ La auditoría de seguridad de octubre de 2026 revisó secretos, accesos, depende
 - **Cabeceras**: `vercel.json` añade CSP, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` y `Permissions-Policy` al despliegue (verificadas contra el build real).
 - **Formularios**: validación de longitud en todos los campos (email ≤ 254, usuario ≤ 30, contraseña 6–128) y ningún HTML crudo en las vistas (React escapa por defecto; no se usa `dangerouslySetInnerHTML`).
 
+El modelo de confianza completo, las comprobaciones con la clave pública y los
+límites conocidos están en **[docs/caso-seguridad.md](docs/caso-seguridad.md)**.
+
 ## Tests
 
 ```bash
