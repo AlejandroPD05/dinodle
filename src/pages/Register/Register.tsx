@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { FormEvent } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { signUp } from '../../services/authService';
 
 export function Register() {
@@ -9,13 +9,20 @@ export function Register() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
+  const navigate = useNavigate();
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     setError(null);
-    const { error } = await signUp(email, password, username);
+    const { data, error } = await signUp(email, password, username);
     if (error) {
       setError(error.message);
+      return;
+    }
+    // Si la confirmación por email está desactivada, Supabase ya devuelve
+    // sesión: se entra a jugar directamente en lugar de pedir el correo.
+    if (data.session) {
+      navigate('/play', { replace: true });
       return;
     }
     setSent(true);

@@ -27,3 +27,5 @@ dist-ssr
 
 # Control de calidad del estudio de sprites (imágenes temporales de revisión)
 scripts/sprite-studio/_qc/
+.vercel
+.env*

@@ -2,6 +2,8 @@
 
 Un dinosaurio secreto cada día. Escribe nombres, lee las pistas y descúbrelo antes de que se acabe el día. Cada acierto entra en tu DinoDex.
 
+**En vivo:** https://dinodle.vercel.app
+
 Proyecto personal de portfolio, hecho con React, TypeScript y Supabase.
 
 ## Capturas
@@ -140,7 +142,7 @@ Necesitas Node.js (se desarrolló con Node 24) y una cuenta de Supabase.
 
 ## Despliegue
 
-La aplicación se publica como sitio estático (el cliente habla directamente con Supabase), así que vale cualquier hosting con soporte para SPA. En el repositorio va incluida la configuración de Vercel (`vercel.json`).
+La aplicación se publica como sitio estático (el cliente habla directamente con Supabase), así que vale cualquier hosting con soporte para SPA. En el repositorio va incluida la configuración de Vercel (`vercel.json`). La instancia pública está en https://dinodle.vercel.app.
 
 1. Importa el repositorio en Vercel: el framework (Vite) se detecta solo y no hay que tocar los comandos de build.
 2. Añade las variables de entorno `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY` con los mismos valores de tu `.env.local`.
@@ -153,7 +155,7 @@ En otro hosting, replica el *rewrite* a `index.html` y sirve `dist/` como estát
 
 La auditoría de seguridad de octubre de 2026 revisó secretos, accesos, dependencias, formularios y cabeceras. Lo que aplica a este proyecto:
 
-- **Contraseñas**: las gestiona Supabase Auth (bcrypt con sal, verificación por email y sus propios límites de intentos). La aplicación nunca almacena contraseñas y este repositorio no contiene ninguna.
+- **Contraseñas**: las gestiona Supabase Auth (bcrypt con sal y sus propios límites de intentos). La aplicación nunca almacena contraseñas y este repositorio no contiene ninguna. La confirmación por email está desactivada para que cualquiera pueda crear una cuenta y jugar al instante; se puede reactivar en Authentication → Providers → Email.
 - **Base de datos**: RLS activo en todas las tablas. El navegador solo puede leer (cada usuario lo suyo): ninguna tabla acepta escrituras del cliente, y las funciones `security definer` van con `search_path` vacío. Los permisos están endurecidos: `anon` y `authenticated` solo tienen `select` (más el `update` del perfil propio).
 - **Edge Functions**: `submit-guess` exige un JWT válido (lo verifica la plataforma), valida que las entradas sean UUID y limita la fuerza bruta a 30 conjeturas por minuto y partida. `get-daily-challenge` es pública a propósito y no revela el dinosaurio objetivo.
 - **Claves**: al cliente solo va la clave pública (`VITE_SUPABASE_ANON_KEY`, protegida por RLS); la service role key vive únicamente en las Edge Functions (entorno de Supabase). `.env.local` está ignorado por git: no hay secretos en el repositorio ni en su historial.
