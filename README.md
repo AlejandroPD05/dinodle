@@ -20,6 +20,13 @@ Proyecto personal de portfolio, hecho con React, TypeScript y Supabase.
 - Al descubrirlo, el dinosaurio entra en tu DinoDex y sube tu racha.
 - El perfil muestra tus estadísticas y un calendario de actividad.
 
+### DinoDuel (1v1)
+
+- Dos cuentas comparten una sala privada con un código de seis caracteres.
+- El mismo dinosaurio secreto para ambos, 12 intentos y 5 minutos desde que entra el segundo jugador.
+- Gana quien lo acierte primero. El servidor valida el tiempo, los intentos y el ganador; al recargar, la sala se reconecta sola.
+- Si se agota el tiempo o ambos gastan los intentos, empate. Abandonar da la victoria al rival y, al terminar, se puede pedir revancha.
+
 ## Stack
 
 - React, TypeScript y Vite, con React Router.
@@ -38,6 +45,12 @@ Proyecto personal de portfolio, hecho con React, TypeScript y Supabase.
 **El día es UTC**, tanto para el reto como para las rachas y el temporizador. En España el cambio ocurre a la 01:00 o las 02:00.
 
 **El contador de intentos es atómico.** La función SQL `register_guess_attempt` hace un `UPDATE ... RETURNING`, así que dos peticiones simultáneas nunca obtienen el mismo número de intento. Solo acepta partidas del día actual y solo la puede ejecutar la service role.
+
+**DinoDuel separa el secreto del estado público.** El dinosaurio del duelo vive en `duel_secrets`, una tabla sin políticas ni permisos para el cliente. Las pistas se calculan en `submit-duel-guess` y el ganador lo decide `duel_solve` con un `update ... where status = 'active'`, así que dos aciertos simultáneos no pueden dar dos ganadores. El cliente no escribe: pide el estado a `duel-state` y recibe avisos por Realtime, que solo publica `duels` y `duel_players`.
+
+**Las carreras de DinoDuel se resuelven en SQL.** `duel_create` y `duel_join` usan un advisory lock por usuario; unirse bloquea la fila del duelo con `for update`. Los intentos se serializan con el bloqueo del duelo y un `unique (duel_id, user_id, dinosaur_id)`.
+
+**El reloj del duelo es cosmético en el cliente.** `duel-state` devuelve `serverNow` para corregir el desfase, pero quien decide si un intento llega a tiempo es `duel_register_attempt` con `now()` en la base de datos.
 
 **Las estadísticas se calculan, no se duplican.** La vista `user_stats` agrega desde `games` con `security_invoker`, de modo que cada usuario solo ve las suyas.
 
@@ -77,11 +90,11 @@ La estética está inspirada en [PMD Collab](https://sprites.pmdcollab.org/): sp
 
 ```
 src/
-  components/    game, layout, profile, sprites
+  components/    game, layout, profile, sprites, duel
   context/       sesión (AuthContext)
   data/          manifiesto de sprites generado
   lib/           cliente de Supabase
-  pages/         Home, Login, Register, ForgotPassword, DinoDex, Dinosaur, Profile, Sprites
+  pages/         Home, Login, Register, ForgotPassword, DinoDex, Dinosaur, Profile, Sprites, Duel
   services/      acceso a Supabase (los componentes no lo llaman directamente)
   types/
   utils/
@@ -91,10 +104,17 @@ scripts/
 supabase/
   schema.sql     tablas, políticas RLS, funciones y vista
   seed.sql       catálogo de dinosaurios
+  duel.sql       DinoDuel: tablas, RLS, Realtime y funciones internas
   functions/
-    _shared/     lógica de pistas (con tests)
+    _shared/     lógica de pistas y utilidades de duelo
     get-daily-challenge/
     submit-guess/
+    create-duel/
+    join-duel/
+    duel-state/
+    submit-duel-guess/
+    duel-action/
+    duel-current/
 public/          iconos y sprites generados (dinos/sprites/)
 ```
 
@@ -117,7 +137,7 @@ Necesitas Node.js (se desarrolló con Node 24) y una cuenta de Supabase.
    VITE_SUPABASE_ANON_KEY=
    ```
 
-4. En el SQL Editor de Supabase ejecuta `supabase/schema.sql` y después `supabase/seed.sql`.
+4. En el SQL Editor de Supabase ejecuta `supabase/schema.sql` y después `supabase/seed.sql`. Para el modo versus, ejecuta también `supabase/duel.sql`, que es idempotente.
 
 5. Despliega las Edge Functions:
 
@@ -126,11 +146,17 @@ Necesitas Node.js (se desarrolló con Node 24) y una cuenta de Supabase.
    npx supabase link --project-ref TU_PROJECT_REF
    npx supabase functions deploy get-daily-challenge
    npx supabase functions deploy submit-guess
+   npx supabase functions deploy create-duel
+   npx supabase functions deploy join-duel
+   npx supabase functions deploy duel-state
+   npx supabase functions deploy submit-duel-guess
+   npx supabase functions deploy duel-action
+   npx supabase functions deploy duel-current
    ```
 
-   No las despliegues con `--no-verify-jwt`: `submit-guess` lee el id del usuario del token que Supabase ya ha verificado.
+   `duel.sql` crea las tablas y las funciones SQL internas que usan las seis funciones de DinoDuel. No las despliegues con `--no-verify-jwt`: todas leen el id del usuario del token que Supabase ya ha verificado.
 
-   Si tu proyecto no está en `eu-west-1`, cambia `FunctionRegion.EuWest1` en `src/services/gameService.ts` por la región de tu base de datos.
+   Si tu proyecto no está en `eu-west-1`, cambia `FunctionRegion.EuWest1` en `src/services/gameService.ts` y `src/services/duelService.ts` por la región de tu base de datos.
 
 6. En Authentication, URL Configuration, añade `http://localhost:5173` como Site URL.
 
@@ -158,6 +184,7 @@ La auditoría de seguridad de octubre de 2026 revisó secretos, accesos, depende
 - **Contraseñas**: las gestiona Supabase Auth (bcrypt con sal y sus propios límites de intentos). La aplicación nunca almacena contraseñas y este repositorio no contiene ninguna. La confirmación por email está desactivada para que cualquiera pueda crear una cuenta y jugar al instante; se puede reactivar en Authentication → Providers → Email.
 - **Base de datos**: RLS activo en todas las tablas. El navegador solo puede leer (cada usuario lo suyo): ninguna tabla acepta escrituras del cliente, y las funciones `security definer` van con `search_path` vacío. Los permisos están endurecidos: `anon` y `authenticated` solo tienen `select` (más el `update` del perfil propio).
 - **Edge Functions**: `submit-guess` exige un JWT válido (lo verifica la plataforma), valida que las entradas sean UUID y limita la fuerza bruta a 30 conjeturas por minuto y partida. `get-daily-challenge` es pública a propósito y no revela el dinosaurio objetivo.
+- **DinoDuel**: el secreto vive en `duel_secrets`, sin políticas, sin grants y fuera de la publicación de Realtime; `duel_guesses` solo lo lee su dueño. Las funciones SQL internas (`duel_*`) están revocadas para `anon` y `authenticated` y solo las ejecuta `service_role`. Las seis Edge Functions exigen JWT y validan pertenencia, estado, tiempo e intentos en el servidor.
 - **Claves**: al cliente solo va la clave pública (`VITE_SUPABASE_ANON_KEY`, protegida por RLS); la service role key vive únicamente en las Edge Functions (entorno de Supabase). `.env.local` está ignorado por git: no hay secretos en el repositorio ni en su historial.
 - **Cabeceras**: `vercel.json` añade CSP, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` y `Permissions-Policy` al despliegue (verificadas contra el build real).
 - **Formularios**: validación de longitud en todos los campos (email ≤ 254, usuario ≤ 30, contraseña 6–128) y ningún HTML crudo en las vistas (React escapa por defecto; no se usa `dangerouslySetInnerHTML`).
@@ -171,13 +198,15 @@ límites conocidos están en **[docs/caso-seguridad.md](docs/caso-seguridad.md)*
 npm run test
 ```
 
-Cubren la lógica de pistas, las fechas del calendario, el temporizador, el encoder GIF, la galería de sprites y los componentes principales (buscador, DinoDex, Home y Dinosaur).
+Cubren la lógica de pistas, las fechas del calendario, el temporizador, el encoder GIF, la galería de sprites, los componentes principales (buscador, DinoDex, Home y Dinosaur) y las utilidades de DinoDuel (códigos, reloj, límite de intentos y resultado).
 
 ## Limitaciones conocidas
 
 - La tabla `dinosaurs` es de lectura pública, porque el buscador necesita todos los nombres. El DinoDex bloquea en la interfaz, no en la base de datos.
 - Los sprites son procedurales: el estudio los genera a partir del catálogo y `DinoSprite` cae al emoji si faltara alguno. Los campos `image_url` y `sprite_url` siguen reservados para material dibujado a mano.
 - Si cambia el día a mitad de una partida, hay que recargar la página.
+- En DinoDuel, si `submit-duel-guess` falla justo después de registrar el intento, la fila queda con `hints = []`: el contador avanza y la partida sigue, pero ese intento no muestra pistas.
+- DinoDuel no tiene matchmaking público ni historial de duelos: solo salas privadas por código y el duelo abierto o activo actual.
 
 ## Siguientes pasos
 
@@ -185,3 +214,4 @@ Cubren la lógica de pistas, las fechas del calendario, el temporizador, el enco
 - Filtros por periodo y dieta en el DinoDex.
 - Panel de administración para gestionar el catálogo.
 - Inicio de sesión con Google y GitHub.
+- Matchmaking y torneos para DinoDuel, e historial de resultados en el perfil.

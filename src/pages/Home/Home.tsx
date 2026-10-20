@@ -50,6 +50,7 @@ export function Home() {
             {session ? (
               <>
                 <Link to="/play" className="button-link">Jugar</Link>
+                <Link to="/duelo" className="button-link button-link-secondary">Duelo</Link>
                 <Link to="/dinodex" className="button-link button-link-secondary">DinoDex</Link>
                 <Link to="/profile" className="button-link button-link-secondary">Perfil</Link>
                 <Link to="/sprites" className="button-link button-link-secondary">Galería de sprites</Link>

@@ -430,3 +430,35 @@ enabled = true
 # La plataforma comprueba la firma del JWT antes de invocar la funcion.
 verify_jwt = true
 entrypoint = "./functions/submit-guess/index.ts"
+
+# DinoDuel: todas exigen un JWT de usuario; el cliente nunca escribe en las
+# tablas, solo llama a estas funciones con service_role.
+[functions.create-duel]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/create-duel/index.ts"
+
+[functions.join-duel]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/join-duel/index.ts"
+
+[functions.duel-state]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/duel-state/index.ts"
+
+[functions.submit-duel-guess]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/submit-duel-guess/index.ts"
+
+[functions.duel-action]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/duel-action/index.ts"
+
+[functions.duel-current]
+enabled = true
+verify_jwt = true
+entrypoint = "./functions/duel-current/index.ts"

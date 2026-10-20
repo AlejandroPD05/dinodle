@@ -1,0 +1,548 @@
+/* DinoDuel — estilos propios sobre los tokens de Dinodle. */
+
+.duel-lobby,
+.duel-room {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ─── Cabecera del lobby ───────────────────────────────────────────────────── */
+
+.duel-hero {
+  text-align: center;
+  padding: 26px 8px 18px;
+}
+
+.duel-kicker {
+  margin: 0 0 6px;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-amber-bright);
+}
+
+.duel-title {
+  margin: 0 0 10px;
+  font-size: 46px;
+  letter-spacing: 2px;
+  animation: title-drop 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.duel-tagline {
+  max-width: 580px;
+  margin: 0 auto;
+  color: var(--color-bone);
+}
+
+.duel-lobby-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.duel-lobby-grid .dk-panel {
+  margin-bottom: 0;
+}
+
+.duel-panel-text {
+  margin: 0 0 14px;
+}
+
+.duel-help {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--color-ink-muted);
+}
+
+.duel-loading {
+  text-align: center;
+  color: var(--color-ink-muted);
+}
+
+.duel-lobby-note {
+  margin: 6px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-ink-muted);
+}
+
+.duel-continue .button-link {
+  margin-top: 4px;
+}
+
+.duel-code-inline {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--color-amber-bright);
+}
+
+/* ─── Formulario de código ────────────────────────────────────────────────── */
+
+.duel-join-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.duel-join-form label {
+  margin: 0;
+}
+
+.duel-code-input {
+  width: 100%;
+  max-width: 260px;
+  padding: 12px 14px;
+  background: var(--color-ink);
+  border: 3px solid var(--color-panel-border);
+  border-radius: 4px;
+  color: var(--color-amber-bright);
+  font-family: var(--font-pixel);
+  font-size: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.duel-code-input:focus {
+  outline: none;
+  border-color: var(--color-amber);
+  box-shadow: 0 0 0 2px rgba(195, 138, 62, 0.35);
+}
+
+.duel-code-input::placeholder {
+  color: var(--color-panel-border);
+}
+
+/* ─── Sala: cabecera y estado ─────────────────────────────────────────────── */
+
+.duel-room-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 2px;
+}
+
+.duel-back {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.duel-room-code {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--color-ink-muted);
+  letter-spacing: 1px;
+}
+
+.duel-status {
+  margin-left: auto;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 5px 9px;
+  border-radius: 3px;
+  border: 2px solid var(--color-panel-border);
+  color: var(--color-bone);
+  background: var(--color-ink);
+}
+
+.duel-status-open {
+  border-color: var(--color-caution);
+  color: var(--color-amber-bright);
+}
+
+.duel-clock {
+  margin-left: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 5px 10px;
+  background: var(--color-ink);
+  border: 2px solid var(--color-panel-border);
+  border-radius: 4px;
+}
+
+.duel-clock-label {
+  font-family: var(--font-pixel);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-ink-muted);
+}
+
+.duel-clock-value {
+  font-family: var(--font-pixel);
+  font-size: 17px;
+  color: var(--color-amber-bright);
+}
+
+.duel-clock-warning {
+  border-color: var(--color-rust);
+}
+
+.duel-clock-warning .duel-clock-value {
+  color: #e07a5f;
+  animation: duel-pulse 1s steps(2, end) infinite;
+}
+
+@keyframes duel-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* ─── Sala de espera ──────────────────────────────────────────────────────── */
+
+.duel-waiting {
+  text-align: center;
+}
+
+.duel-code {
+  margin: 0 0 16px;
+  padding: 18px 12px;
+  background: var(--color-ink);
+  border: 3px dashed var(--color-panel-border);
+  border-radius: 4px;
+  font-family: var(--font-pixel);
+  font-size: 38px;
+  letter-spacing: 8px;
+  color: var(--color-amber-bright);
+  user-select: all;
+}
+
+.duel-waiting-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* ─── Marcador ────────────────────────────────────────────────────────────── */
+
+.duel-scoreboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.duel-scoreboard-single {
+  max-width: 320px;
+  margin: 18px auto;
+  text-align: left;
+}
+
+.duel-player {
+  background: linear-gradient(180deg, var(--color-panel), var(--color-bg-alt));
+  border: 2px solid var(--color-panel-border);
+  border-radius: 6px;
+  padding: 12px 14px;
+  box-shadow: 0 3px 0 var(--color-ink);
+}
+
+.duel-player-me {
+  border-color: var(--color-amber);
+}
+
+.duel-player-solved {
+  border-color: var(--color-jungle-bright);
+}
+
+.duel-player-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.duel-presence {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5a5648;
+}
+
+.duel-presence.is-online {
+  background: var(--color-jungle-bright);
+  box-shadow: 0 0 7px var(--color-jungle-bright);
+}
+
+.duel-presence.is-offline {
+  background: #5a5648;
+}
+
+.duel-player-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  overflow-wrap: anywhere;
+}
+
+.duel-player-you {
+  color: var(--color-amber-bright);
+}
+
+.duel-player-badge {
+  margin-left: auto;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: var(--color-jungle);
+  color: var(--color-bone);
+  font-family: var(--font-pixel);
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.duel-player-attempts {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--color-ink-muted);
+}
+
+.duel-player-attempts strong {
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  color: var(--color-bone);
+}
+
+.duel-player-state {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--color-ink-muted);
+}
+
+.duel-player-solved .duel-player-state {
+  color: var(--color-jungle-bright);
+}
+
+/* ─── Zona de juego ───────────────────────────────────────────────────────── */
+
+.duel-play {
+  margin-bottom: 6px;
+}
+
+.duel-play .guess-bar {
+  margin: 0 0 6px;
+  padding: 0;
+  position: static;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.duel-play .autocomplete {
+  max-width: none;
+}
+
+.duel-attempts-line {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: var(--color-bone);
+}
+
+.duel-attempts-line strong {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  color: var(--color-amber-bright);
+}
+
+.duel-rival-line {
+  color: var(--color-ink-muted);
+}
+
+.duel-guesses {
+  margin-bottom: 6px;
+}
+
+.duel-guesses .guess-board {
+  margin-top: 0;
+}
+
+/* ─── Resultado ───────────────────────────────────────────────────────────── */
+
+.duel-result-title {
+  margin: 4px 0 20px;
+  text-align: center;
+  font-size: 30px;
+  color: var(--color-amber-bright);
+}
+
+.duel-result-win .duel-result-title {
+  color: var(--color-jungle-bright);
+  animation: title-drop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.duel-result-target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.duel-result-sprite {
+  display: block;
+  flex: none;
+  width: 92px;
+  height: 92px;
+  font-size: 56px;
+  line-height: 92px;
+  text-align: center;
+}
+
+.duel-result-caption {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-ink-muted);
+}
+
+.duel-result-name {
+  margin: 2px 0;
+  font-family: var(--font-display);
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  color: var(--color-bone);
+}
+
+.duel-result-meta {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-ink-muted);
+}
+
+.duel-result-score {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0 0 20px;
+  padding: 10px 14px;
+  border: 2px solid var(--color-panel-border);
+  border-radius: 4px;
+  background: var(--color-ink);
+  font-size: 14px;
+  color: var(--color-ink-muted);
+}
+
+.duel-result-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ─── Botones y errores ───────────────────────────────────────────────────── */
+
+button.button-link {
+  cursor: pointer;
+}
+
+.button-link:disabled,
+.duel-link-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  filter: none;
+  transform: none;
+  box-shadow: 3px 3px 0 var(--color-ink);
+}
+
+.duel-link-button {
+  align-self: center;
+  background: none;
+  border: none;
+  padding: 6px 8px;
+  color: var(--color-ink-muted);
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.duel-link-button:hover {
+  color: var(--color-amber-bright);
+}
+
+.duel-error {
+  margin: 12px 0;
+  padding: 10px 14px;
+  border-left: 4px solid var(--color-rust);
+  border-radius: 3px;
+  background: rgba(156, 69, 48, 0.16);
+  color: #e6b3a4;
+}
+
+.duel-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ─── Responsive ──────────────────────────────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .duel-lobby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .duel-title {
+    font-size: 38px;
+  }
+
+  .duel-result-target {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .duel-code {
+    font-size: 26px;
+    letter-spacing: 4px;
+    padding: 14px 8px;
+  }
+
+  .duel-code-input {
+    font-size: 17px;
+    letter-spacing: 4px;
+  }
+
+  .duel-room-head {
+    gap: 8px;
+  }
+
+  .duel-room-code {
+    display: none;
+  }
+
+  .duel-result-title {
+    font-size: 25px;
+  }
+
+  .duel-result-name {
+    font-size: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .duel-title,
+  .duel-result-win .duel-result-title,
+  .duel-clock-warning .duel-clock-value {
+    animation: none;
+  }
+}

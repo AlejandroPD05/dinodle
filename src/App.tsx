@@ -15,6 +15,8 @@ import { DinosaurPage } from './pages/Dinosaur/Dinosaur';
 import { Profile } from './pages/Profile/Profile';
 import { SpritesPage } from './pages/Sprites/SpritesPage';
 import { SpriteDetailPage } from './pages/Sprites/SpriteDetailPage';
+import { DuelLobby } from './pages/Duel/DuelLobby';
+import { DuelRoom } from './pages/Duel/DuelRoom';
 import { getTodayChallenge, submitGuess, getGameStatus, getGuessHistory } from './services/gameService';
 import { getAllDinosaurs } from './services/dinosaurService';
 import type { DailyChallenge } from './types/dailyChallenge';
@@ -131,6 +133,8 @@ export default function App() {
             <Route path="/dinodex" element={<DinoDex />} />
             <Route path="/dinodex/:slug" element={<DinosaurPage />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/duelo" element={<DuelLobby />} />
+            <Route path="/duelo/:id" element={<DuelRoom />} />
           </Route>
         </Routes>
       </BrowserRouter>

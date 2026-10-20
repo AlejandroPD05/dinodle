@@ -17,6 +17,7 @@ export function Header() {
         <nav>
           <Link to="/play">Jugar</Link>
           <Link to="/dinodex">DinoDex</Link>
+          <Link to="/duelo">Duelo</Link>
           <Link to="/profile">Perfil</Link>
         </nav>
         <button onClick={handleLogout}>Salir</button>
